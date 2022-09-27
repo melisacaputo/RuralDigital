@@ -1,0 +1,92 @@
+footer {
+  margin-top: 50px;
+
+  .footer_container {
+    display: grid;
+    margin-bottom: 40px;
+    padding: 0 150px;
+    grid-template-columns: 1fr 1fr 2fr;
+
+    .logos__container {
+      display: flex;
+      margin: 20px;
+      margin-right: 50px;
+      align-items: center;
+
+      .fa-whatsapp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background-color: $color-green;
+        color: white;
+        font-size: 2.2rem;
+        border-radius: 50%;
+        padding: 45%;
+        margin: 10px;
+      }
+
+      .fa-facebook-f {
+        @extend .fa-whatsapp;
+        background-color: $color-blue;
+      }
+
+      .fa-instagram {
+        @extend .fa-whatsapp;
+        background-color: $color-orange;
+      }
+
+      .fa-linkedin {
+        @extend .fa-whatsapp;
+        background-color: $color-blue-light;
+      }
+    }
+
+    .menu_footer {
+      font-size: 1.4rem;
+
+      h3 {
+        color: $color-orange;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      li {
+        list-style-type: none;
+        margin-left: 0px;
+      }
+    }
+
+    .footer__container-logo {
+      justify-self: flex-end;
+
+      img {
+        width: 150px;
+      }
+    }
+  }
+
+  p {
+    margin: 30px;
+    text-align: center;
+  }
+
+  .creators {
+    font-weight: 400;
+    color: grey;
+
+    a {
+      font-weight: 600;
+
+      &:hover {
+        color: $color-black;
+        transition: .5s;
+      }
+    }
+  }
+}

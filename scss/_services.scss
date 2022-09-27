@@ -1,0 +1,289 @@
+.services {
+  width: 100%;
+  height: max-content;
+  margin: 0 0 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .services__title {
+      font-size: 2.5em;
+      font-family: $font-cursiva;
+      color: $color-black;
+      font-weight: 800;
+      text-align: center;
+      margin-top: 40px;
+      max-width: 150px;
+    }
+
+    .services__subtitle {
+      font-size: 1.5em;
+      text-align: center;
+      font-weight: 300;
+      margin: 50px 0;
+      max-width: 1020px;
+      padding: 30px;
+
+      span {
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__cards {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 10px 0;
+
+    &-container {
+      display: flex;
+      align-items: flex-end;
+
+      .services__card {
+        display: flex;
+        position: relative;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 270px;
+        height: 240px;
+        margin: 0 40px;
+        border-radius: 24px;
+        box-shadow: 20px 14px 48px rgba(0, 24, 52, 0.2);
+
+        .services__img {
+          position: absolute;
+          top: -65px;
+          width: 182px;
+          height: 182px;
+          border-radius: 50%;
+          background-color: $color-blue;
+          display: flex;
+          box-shadow: 0px 0px 10px 0px rgb(66, 66, 66);
+
+          img {
+            margin: 0 auto;
+            align-self: center;
+            width: 40%;
+          }
+        }
+
+        .services__title {
+          font-family: $font-minuscula;
+          font-size: 1.5em;
+          text-align: center;
+          color: $color-black;
+          font-weight: 400;
+          margin: 0 0 35px 0;
+          max-width: 80%;
+          color: white;
+        }
+      }
+
+      .services__card-green {
+        border-radius: 100px 24px 24px 24px;
+        background-color: $color-green;
+
+        .services__img {
+          background-color: white;
+          display: flex;
+
+          img {
+            margin: 0 auto;
+            align-self: center;
+            width: 40%;
+          }
+        }
+      }
+
+      .services__card-blue {
+        border-radius: 24px;
+        position: relative;
+        background-color: $color-blue;
+        height: 270px;
+
+        .services__img {
+          background-color: white;
+          top: -40px;
+
+          img {
+            width: 30%;
+          }
+        }
+      }
+
+      .services__card-orange {
+        border-radius: 24px 100px 24px 24px;
+        background-color: $color-orange;
+
+        .services__img {
+          background-color: white;
+          display: flex;
+
+          img {
+            margin: 0 auto;
+            align-self: center;
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+
+  .services__desc {
+    font-size: 2em;
+    font-weight: 400;
+    text-align: center;
+    max-width: 80%;
+    font-family: $font-cursiva;
+    color: $color-green;
+    background-color: $color-cream;
+    padding: 50px 60px;
+    margin: 70px 0 0 0;
+    border-radius: 30px;
+
+    span {
+      font-weight: 700;
+      font-family: $font-cursiva;
+    }
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  .services {
+    &__text {
+      .services__title {
+        margin-top: 30px;
+      }
+
+      .services__subtitle {
+        font-size: 1.5em;
+        margin: 10px 0px 40px;
+        padding: 20px 80px;
+      }
+    }
+
+    &__cards {
+      width: 100%;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      margin: 10px 0;
+
+      &-container {
+        display: flex;
+        align-items: flex-end;
+
+        .services__card {
+          display: flex;
+          position: relative;
+          flex-direction: column-reverse;
+          align-items: center;
+          width: 210px;
+          height: 180px;
+          margin: 0 30px;
+          border-radius: 24px;
+          box-shadow: -0px -24px 48px rgba(0, 24, 52, 0.2);
+
+          .services__img {
+            position: absolute;
+            top: -75px;
+            width: 142px;
+            height: 142px;
+            border-radius: 50%;
+            background-color: $color-blue;
+            display: flex;
+            box-shadow: 0 0 0 0;
+
+            img {
+              margin: 0 auto;
+              align-self: center;
+              width: 40%;
+            }
+          }
+
+          .services__title {
+            font-family: $font-minuscula;
+            font-size: 1.5em;
+            text-align: center;
+            color: $color-black;
+            font-weight: 400;
+            margin: 0 0 35px 0;
+            max-width: 160px;
+            color: white;
+          }
+        }
+
+        .services__card-green {
+          border-radius: 100px 24px 24px 24px;
+          background-color: $color-green;
+
+          .services__img {
+            background-color: white;
+            display: flex;
+
+            img {
+              margin: 0 auto;
+              align-self: center;
+              width: 40%;
+            }
+          }
+        }
+
+        .services__card-blue {
+          border-radius: 24px;
+          position: relative;
+          background-color: $color-blue;
+          height: 230px;
+
+          .services__img {
+            background-color: white;
+            top: -40px;
+
+            img {
+              width: 30%;
+            }
+          }
+        }
+
+        .services__card-orange {
+          border-radius: 24px 100px 24px 24px;
+          background-color: $color-orange;
+
+          .services__img {
+            background-color: white;
+            display: flex;
+
+            img {
+              margin: 0 auto;
+              align-self: center;
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+
+    .services__desc {
+      font-size: 1.5em;
+      font-weight: 400;
+      text-align: center;
+      font-family: $font-cursiva;
+      color: $color-green;
+      background-color: $color-cream;
+      margin: 70px 0 0 0;
+
+      span {
+        font-weight: 700;
+        font-family: $font-cursiva;
+      }
+    }
+  }
+}

@@ -1,0 +1,233 @@
+.valores {
+  width: 100%;
+  display: flex;
+  align-content: flex-end;
+  flex-direction: column;
+  height: max-content;
+
+  .valores__title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5em;
+    font-family: $font-cursiva;
+    font-weight: 800;
+    color: $color-black;
+    height: 100px;
+    margin: 30px 0px 0px;
+
+    .valores__title {
+      font-family: $font-cursiva;
+      margin: 0 10px;
+    }
+
+    .valores__logo {
+      font-family: $font-cursiva;
+      background-color: $color-orange;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      width: 3.2em;
+      height: 3.2em;
+      border-radius: 100%;
+      color: white;
+      font-weight: 500;
+
+      &-text {
+        font-family: $font-cursiva;
+      }
+    }
+  }
+
+  .valores__container {
+    width: 100%;
+    height: max-content;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 35px 0;
+
+    .valores__text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 500px;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+
+        li {
+          list-style: none;
+          font-weight: 700;
+          font-size: 1.8rem;
+          padding: 15px;
+          display: flex;
+          width: max-content;
+
+          img {
+            width: 30px;
+            margin: 0 15px 5px;
+          }
+        }
+
+        .simple {
+          color: $color-orange;
+        }
+
+        .cercano {
+          color: $color-blue;
+        }
+
+        .adaptable {
+          color: $color-blue-light;
+        }
+      }
+    }
+
+    .valores__img {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 1000px;
+      height: 400px;
+      background-image: url(../imgs/img-sobre-nosotros.png);
+      background-size: cover;
+
+
+      p {
+        color: #FFECE1;
+        font-weight: 300;
+        font-family: $font-minuscula;
+        font-size: 1.8em;
+        max-width: 800px;
+        margin-left: 15%;
+
+        &:first-of-type {
+          padding-bottom: 50px;
+        }
+
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  .valores {
+    width: 100%;
+    display: flex;
+    align-content: flex-end;
+    flex-direction: column;
+    height: max-content;
+
+    .valores__title-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-family: $font-cursiva;
+      font-weight: 800;
+      color: $color-black;
+      height: 100px;
+
+      .valores__title {
+        font-family: $font-cursiva;
+        margin: 0 10px;
+      }
+
+      .valores__logo {
+        font-family: $font-cursiva;
+        background-color: $color-orange;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        border-radius: 100%;
+        color: white;
+        font-weight: 500;
+
+        &-text {
+          font-family: $font-cursiva;
+        }
+      }
+    }
+
+    .valores__container {
+      width: 100%;
+      height: max-content;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 35px 0;
+
+      .valores__text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          width: max-content;
+
+          li {
+            list-style: none;
+            font-weight: 700;
+            padding: 15px;
+            display: flex;
+            width: max-content;
+
+            img {
+              width: 50px;
+              margin: 0 15px 5px;
+            }
+          }
+
+          .simple {
+            color: $color-orange;
+          }
+
+          .cercano {
+            color: $color-blue;
+          }
+
+          .adaptable {
+            color: $color-blue-light;
+          }
+        }
+      }
+
+      .valores__img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 1000px;
+        height: 350px;
+        background-image: url(../imgs/img-sobre-nosotros.png);
+        background-size: cover;
+
+        p {
+          color: #FFECE1;
+          font-weight: 300;
+          font-family: $font-minuscula;
+          font-size: 1.8em;
+          max-width: 800px;
+          margin-left: 15%;
+
+          span {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}

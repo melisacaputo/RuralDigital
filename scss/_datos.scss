@@ -1,0 +1,70 @@
+.datos {
+    margin-top: 250px;
+    height: 30em;
+    background-image: url(../imgs/img-datos.JPG);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .datos__card-container {
+        display: flex;
+        width: 50%;
+        justify-content: center;
+
+        .datos_card {
+            background-color: $color-blue;
+            color: white;
+            border-radius: 100px 24px 24px 24px;
+            width: 80%;
+            height: 30em;
+            position: relative;
+            top: -80px;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            h3 {
+                color: $color-orange;
+                letter-spacing: 1px;
+                font-size: 2rem;
+                position: relative;
+                text-align: center;
+                top: 20px;
+            }
+
+            ul {
+                margin-top: 20px;
+                color: #FFECE1;
+
+                li {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+
+    .datos_text-container {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .datos_text {
+            color: $color-blue;
+            font-size: 3rem;
+            font-style: italic;
+            font-family: $font-cursiva;
+            width: 85%;
+            height: 200px;
+
+            span {
+                font-weight: 900;
+                font-family: $font-cursiva;
+            }
+        }
+    }
+
+}
